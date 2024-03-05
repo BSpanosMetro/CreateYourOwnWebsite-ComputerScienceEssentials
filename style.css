@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-  color: #950909;
+  color: #444444;
 }
 
 img {
@@ -35,7 +35,7 @@ li a {
 }
 
 li a.active {
-  background-color: #9604a9;
+  background-color: #ae00ff;
   color: white;
 }
 
