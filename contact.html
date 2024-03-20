@@ -13,13 +13,14 @@
     alt="A cat in a box that is both alive and dead." style="width:100px;height:100px;"> 
     The Erwin Schrödinger Memorial Cat Daycare  </h1>
   <h3> "Having in it the living and dead cat ... in equal parts." - Erwin Schrödinger</h3>
-  <ul>
-    <li><a href="index.html">Home</Home></a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="facilities.html">Our Facilities</a></li>
-    <li><a class="active" href="contact.html">Contact us</a></li>
-  </ul>
-
+  <div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="facilities.html">Our Facilities</a>
+    <a href="staff.html">Meet Our Team</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  
   <h2>Contact Us</h2>
 
   <div class="container">
@@ -30,7 +31,14 @@
       <label for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-      <label for="country">Country</label>
+      <label for="cname">Cat's Name</label>
+      <input type="text" id="cname" name="catsname" placeholder="Your cat's name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="exampletext@examplemail.com">
+
+
+      <label for="country">Home Country</label>
       <select id="country" name="country">
         <option value="austria">Austria</option>
         <option value="great britain">Britain</option>
@@ -44,16 +52,30 @@
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       <!--your code for button submit should be here in side the form, but beacuse you have to use java script to activite the functionality, you will not send the information any where! you will want to disaple the submit button and maybe give a windows pop up alret that the inormation have been submitted! -->
     </form>
-    <button onclick="myalert()">submit</button>
+    <button onclick="myalert()">
+      <h3>Submit</h3>
+    </button>
 
     <!--allowing the pop up window to show up-->
     <script>
       function myalert() {
-        alert("Thank you for your submission! ");
+        alert("Thank you for your submission! We will get back to you as soon as we can/have no other choice");
       } 
     </script>
   </div>
   
+  <p>
+    Address: 6236 Alpbach
+  </p>
+  
+  <p>
+    Phone: 778-330-2389
+  </p>
+
+  <p> 
+    DISCLAIMER: This is a joke. Please don't take anything on this website seriously. 
+    We aren't completely immoral.
+  </p>
 </body>
 
 </html>
